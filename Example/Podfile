@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NSDataAES_Example' do
+  pod 'NSDataAES', :path => '../'
+
+  target 'NSDataAES_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

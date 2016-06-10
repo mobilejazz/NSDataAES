@@ -1,0 +1,6 @@
+framework module Pods_NSDataAES_Example {
+  umbrella header "Pods-NSDataAES_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

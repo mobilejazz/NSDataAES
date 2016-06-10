@@ -1,0 +1,6 @@
+framework module NSDataAES {
+  umbrella header "NSDataAES-umbrella.h"
+
+  export *
+  module * { export * }
+}
