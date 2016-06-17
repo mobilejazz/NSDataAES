@@ -1,4 +1,4 @@
-
+![Banner](https://raw.githubusercontent.com/mobilejazz/metadata/master/images/banners/mobile-jazz-nsdataaes.png)
 # ![Mobile Jazz Badge](https://raw.githubusercontent.com/mobilejazz/metadata/master/images/icons/mj-40x40.png) NSDataAES
 
 [![Version](https://img.shields.io/cocoapods/v/NSDataAES.svg?style=flat)](http://cocoapods.org/pods/NSDataAES)
@@ -22,6 +22,7 @@ pod "NSDataAES"
 
 ## Author
 
+Joan Martin, joan@mobilejazz.com
 Paolo Tagliani, paolo@mobilejazz.com
 
 ## License
