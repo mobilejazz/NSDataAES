@@ -35,12 +35,12 @@
     return [self aes_encrypt:key withInitial:iv andPadding:kCCOptionPKCS7Padding];
 }
 
-- (NSData*)aes_encrypt:(NSData*)key withPadding:(CCOptions)options
+- (NSData*)aes_encrypt:(NSData*)key withPadding:(MJCCOption)options
 {
     return [self aes_encrypt:key withInitial:nil andPadding:options];
 }
 
-- (NSData*)aes_encrypt:(NSData*)key withInitial:(NSData*)iv andPadding:(CCOptions)options
+- (NSData*)aes_encrypt:(NSData*)key withInitial:(NSData*)iv andPadding:(MJCCOption)options
 {
     return [NSDataAESCipher cipherWithkey:key
                                     value:self
@@ -66,12 +66,12 @@
     return [self aes_decrypt:key withInitial:iv andPadding:kCCOptionPKCS7Padding];
 }
 
-- (NSData *)aes_decrypt:(NSData *)key withPadding:(CCOptions)options
+- (NSData *)aes_decrypt:(NSData *)key withPadding:(MJCCOption)options
 {
     return [self aes_decrypt:key withInitial:nil andPadding:options];
 }
 
-- (NSData*)aes_decrypt:(NSData*)key withInitial:(NSData*)iv andPadding:(CCOptions)options
+- (NSData*)aes_decrypt:(NSData*)key withInitial:(NSData*)iv andPadding:(MJCCOption)options
 {
     return [NSDataAESCipher cipherWithkey:key
                                     value:self
