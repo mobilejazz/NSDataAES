@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
   s.name             = 'NSDataAES'
   s.version          = '0.2.2'
-  s.summary          = 'Simple category to encrypt NSData using AED'
+  s.summary          = 'Simple category to encrypt NSData using AES'
   s.homepage         = 'https://github.com/mobilejazz/NSDataAES'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Paolo Tagliani' => 'paolo@mobilejazz.com' }
