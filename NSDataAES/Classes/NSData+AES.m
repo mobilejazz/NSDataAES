@@ -14,9 +14,9 @@
 // limitations under the License.
 //
 
-#import "NSData+AES.h"
+#import <CommonCrypto/CommonCryptor.h>
 
-#import "NSDataAESCipher.h"
+#import "NSData+AES.h"
 
 @implementation NSData (AES)
 

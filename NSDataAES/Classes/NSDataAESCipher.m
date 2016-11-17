@@ -7,8 +7,9 @@
 //
 
 #import "NSDataAESCipher.h"
-
 #import "NSData+SHA.h"
+
+#import <CommonCrypto/CommonCryptor.h>
 
 NSString * NSDataAESCipherErrorDomain = @"com.mobilejazz.NSDataAESCipher";
 

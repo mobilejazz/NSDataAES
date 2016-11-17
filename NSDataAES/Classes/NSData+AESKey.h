@@ -26,13 +26,13 @@
  ** *************************************************** **/
 
 - (NSData*)aes_encryptValue:(NSData*)value;
-- (NSData*)aes_encryptValue:(NSData*)value usingPadding:(CCOptions)options;
+- (NSData*)aes_encryptValue:(NSData*)value usingPadding:(MJCCOption)options;
 
 /** *************************************************** **
  * @name Decrypt
  ** *************************************************** **/
 
 - (NSData*)aes_decryptValue:(NSData*)value;
-- (NSData*)aes_decryptValue:(NSData*)value usingPadding:(CCOptions)options;
+- (NSData*)aes_decryptValue:(NSData*)value usingPadding:(MJCCOption)options;
 
 @end

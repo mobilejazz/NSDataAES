@@ -8,5 +8,5 @@ Pod::Spec.new do |s|
   s.author           = { 'Paolo Tagliani' => 'paolo@mobilejazz.com' }
   s.source           = { :git => 'https://github.com/mobilejazz/NSDataAES.git', :tag => s.version.to_s }
   s.ios.deployment_target = '7.0'
-  s.source_files = 'NSDataAES/Classes/**/*'
+  s.source_files 	 = 'NSDataAES/Classes/**/*'
 end

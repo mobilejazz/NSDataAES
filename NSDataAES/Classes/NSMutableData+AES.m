@@ -21,15 +21,15 @@
 
 - (void)aes_encryptInPlace:(NSData*)key
 {
-    [self aes_encryptInPlace:key withPadding:kCCOptionPKCS7Padding];
+    [self aes_encryptInPlace:key withPadding:MJCCOptionPKCS7Padding];
 }
 
-- (void)aes_encryptInPlace:(NSData*)key withPadding:(CCOptions)options
+- (void)aes_encryptInPlace:(NSData*)key withPadding:(MJCCOption)options
 {
     NSData *data = [NSDataAESCipher cipherWithkey:key
                                             value:self
                                                iv:nil
-                                        operation:kCCEncrypt
+                                        operation:MJCCEncrypt
                                           options:options
                                            output:nil
                                             error:nil];
@@ -38,15 +38,15 @@
 
 - (void)aes_decryptInPlace:(NSData*)key
 {
-    [self aes_decryptInPlace:key withPadding:kCCOptionPKCS7Padding];
+    [self aes_decryptInPlace:key withPadding:MJCCOptionPKCS7Padding];
 }
 
-- (void)aes_decryptInPlace:(NSData*)key withPadding:(CCOptions)options
+- (void)aes_decryptInPlace:(NSData*)key withPadding:(MJCCOption)options
 {
     NSData *data = [NSDataAESCipher cipherWithkey:key
                                             value:self
                                                iv:nil
-                                        operation:kCCDecrypt
+                                        operation:MJCCDecrypt
                                           options:options
                                            output:nil
                                             error:nil];

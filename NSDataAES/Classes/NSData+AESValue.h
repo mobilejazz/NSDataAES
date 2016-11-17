@@ -26,13 +26,13 @@
  ** *************************************************** **/
 
 - (NSData*)aes_encryptWithKey:(NSData*)key;
-- (NSData*)aes_encryptWithKey:(NSData*)key usingPadding:(CCOptions)options;
+- (NSData*)aes_encryptWithKey:(NSData*)key usingPadding:(MJCCOption)options;
 
 /** *************************************************** **
  * @name Decrypt
  ** *************************************************** **/
 
 - (NSData*)aes_decryptWithKey:(NSData*)key;
-- (NSData*)aes_decryptWithKey:(NSData*)key usingPadding:(CCOptions)options;
+- (NSData*)aes_decryptWithKey:(NSData*)key usingPadding:(MJCCOption)options;
 
 @end

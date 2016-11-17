@@ -15,7 +15,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CommonCrypto/CommonCryptor.h>
+
+#import "NSDataAESCipher.h"
 
 /**
  * NSData AES encryption category.
@@ -28,9 +29,9 @@
 
 - (NSData*)aes_encrypt:(NSData*)key;
 - (NSData*)aes_encryptWithString:(NSString*)key;
-- (NSData*)aes_encrypt:(NSData*)key withPadding:(CCOptions) options;
+- (NSData*)aes_encrypt:(NSData*)key withPadding:(MJCCOption) options;
 - (NSData*)aes_encrypt:(NSData*)key withInitial:(NSData*)iv;
-- (NSData*)aes_encrypt:(NSData*)key withInitial:(NSData*)iv andPadding:(CCOptions)options;
+- (NSData*)aes_encrypt:(NSData*)key withInitial:(NSData*)iv andPadding:(MJCCOption)options;
 
 /** *************************************************** **
  * @name Decrypt
@@ -38,8 +39,8 @@
 
 - (NSData*)aes_decrypt:(NSData*)key;
 - (NSData*)aes_decryptWithString:(NSString*)key;
-- (NSData*)aes_decrypt:(NSData*)key withPadding:(CCOptions)options;
+- (NSData*)aes_decrypt:(NSData*)key withPadding:(MJCCOption)options;
 - (NSData*)aes_decrypt:(NSData*)key withInitial:(NSData*)iv;
-- (NSData*)aes_decrypt:(NSData*)key withInitial:(NSData*)iv andPadding:(CCOptions)options;
+- (NSData*)aes_decrypt:(NSData*)key withInitial:(NSData*)iv andPadding:(MJCCOption)options;
 
 @end

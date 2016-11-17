@@ -15,6 +15,7 @@
 //
 
 #import "NSData+AES.h"
+#import "NSDataAESCipher.h"
 
 /**
  * Category on NSMutableData for AES encryption.
@@ -26,13 +27,13 @@
  ** *************************************************** **/
 
 - (void)aes_encryptInPlace:(NSData*)key;
-- (void)aes_encryptInPlace:(NSData*)key withPadding:(CCOptions)options;
+- (void)aes_encryptInPlace:(NSData*)key withPadding:(MJCCOption)options;
 
 /** *************************************************** **
  * @name Decrypt
  ** *************************************************** **/
 
 - (void)aes_decryptInPlace:(NSData*)key;
-- (void)aes_decryptInPlace:(NSData*)key withPadding:(CCOptions)options;
+- (void)aes_decryptInPlace:(NSData*)key withPadding:(MJCCOption)options;
 
 @end

@@ -7,7 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CommonCrypto/CommonCryptor.h>
+
+typedef NS_ENUM(uint32_t, MJCCOption) {
+    MJCCOptionPKCS7Padding   = 0x0001,
+    MJCCOptionECBMode        = 0x0002
+};
+
+typedef NS_ENUM(uint32_t, MJCCOperation) {
+    MJCCEncrypt = 0,
+    MJCCDecrypt,
+};
 
 extern NSString * NSDataAESCipherErrorDomain;
 
@@ -27,8 +36,8 @@ extern NSInteger const NSDataAESCipherCUnimplementedErrorCode;
 + (NSData*)cipherWithkey:(NSData*)key
                    value:(NSData*)value
                       iv:(NSData*)iv
-               operation:(CCOperation)operation
-                 options:(CCOptions)options
+               operation:(MJCCOperation)operation
+                 options:(MJCCOption)options
                   output:(NSMutableData*)output
                    error:(NSError**)error;
 

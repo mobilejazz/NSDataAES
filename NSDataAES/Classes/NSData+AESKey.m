@@ -20,20 +20,20 @@
 
 - (NSData*)aes_encryptValue:(NSData*)value
 {
-    return [value aes_encrypt:self withPadding:kCCOptionPKCS7Padding];
+    return [value aes_encrypt:self withPadding:MJCCOptionPKCS7Padding];
 }
 
-- (NSData*)aes_encryptValue:(NSData*)value usingPadding:(CCOptions)options
+- (NSData*)aes_encryptValue:(NSData*)value usingPadding:(MJCCOption)options
 {
     return [value aes_encrypt:self withPadding:options];
 }
 
 - (NSData*)aes_decryptValue:(NSData*)value
 {
-    return [value aes_decrypt:self withPadding:kCCOptionPKCS7Padding];
+    return [value aes_decrypt:self withPadding:MJCCOptionPKCS7Padding];
 }
 
-- (NSData*)aes_decryptValue:(NSData*)value usingPadding:(CCOptions)options
+- (NSData*)aes_decryptValue:(NSData*)value usingPadding:(MJCCOption)options
 {
     return [value aes_decrypt:self withPadding:options];
 }
