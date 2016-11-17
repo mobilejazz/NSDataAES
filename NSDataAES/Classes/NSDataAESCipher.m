@@ -26,7 +26,7 @@ NSInteger const NSDataAESCipherCUnimplementedErrorCode  = kCCUnimplemented;
 + (NSData*)cipherWithkey:(NSData*)key
                    value:(NSData*)value
                       iv:(NSData*)iv
-               operation:(CCOperation)operation
+               operation:(MJCCOperation)operation
                  options:(MJCCOption)options
                   output:(NSMutableData*)output
                    error:(NSError**)error
